@@ -21,8 +21,6 @@ public partial class App : Application
     {
         _mainWindow = new MainWindow();
 
-        _mainWindow.AppWindow.Resize(new SizeInt32(600, 600));
-
         _mainWindow.Activate();
     }
 }
