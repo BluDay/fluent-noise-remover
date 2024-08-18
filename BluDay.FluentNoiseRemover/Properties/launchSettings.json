@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BluDay.FluentNoiseRemover (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "BluDay.FluentNoiseRemover (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
