@@ -22,11 +22,11 @@
 
         <Grid Padding="8" Grid.RowSpan="2">
             <Button CornerRadius="64"
-                    Height="128"
+                    Height="100"
                     HorizontalAlignment="Center"
-                    Padding="32"
+                    Padding="28"
                     VerticalAlignment="Center"
-                    Width="128">
+                    Width="100">
                 <Viewbox>
                     <!-- f8ae (PauseBold) -->
                     
