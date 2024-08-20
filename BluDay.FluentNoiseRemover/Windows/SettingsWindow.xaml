@@ -19,5 +19,9 @@
         <controls:TitleBar x:Name="AppTitleBar"/>
 
         <TextBlock HorizontalAlignment="Center" Text="{x:Bind}" VerticalAlignment="Center" Grid.RowSpan="2"/>
+
+        <Grid Padding="32,24" Grid.RowSpan="2">
+            <TextBlock FontSize="20" Style="{ThemeResource TitleTextBlockStyle}" Text="Settings"/>
+        </Grid>
     </Grid>
 </Window>
