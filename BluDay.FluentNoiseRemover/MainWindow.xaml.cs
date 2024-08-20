@@ -22,11 +22,16 @@ public sealed partial class MainWindow : Window
 
         _overlappedPresenter = (OverlappedPresenter)_appWindow.Presenter;
 
+        InitializeComponent();
+
         _overlappedPresenter.IsMaximizable = false;
+        _overlappedPresenter.IsMinimizable = false;
         _overlappedPresenter.IsResizable   = false;
 
-        _appWindow.Resize(new SizeInt32(600, 600));
+        _overlappedPresenter.SetBorderAndTitleBar(true, false);
 
-        InitializeComponent();
+        _appWindow.ResizeClient(new SizeInt32(600, 600));
+
+        AppTitleBar.SetWindow(this);
     }
 }

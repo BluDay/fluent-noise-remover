@@ -16,8 +16,41 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <controls:TitleBar/>
+        <controls:TitleBar x:Name="AppTitleBar"/>
 
-        <TextBlock HorizontalAlignment="Center" Text="{x:Bind}" VerticalAlignment="Center" Grid.RowSpan="2"/>
+        <!--<TextBlock HorizontalAlignment="Center" Text="{x:Bind}" VerticalAlignment="Center" Grid.RowSpan="2"/>-->
+
+        <Grid Padding="8" Grid.RowSpan="2">
+            <Button CornerRadius="64"
+                    Height="128"
+                    HorizontalAlignment="Center"
+                    Padding="32"
+                    VerticalAlignment="Center"
+                    Width="128">
+                <Viewbox>
+                    <!-- f8ae (PauseBold) -->
+                    
+                    <FontIcon Glyph="&#xf5b0;"/>
+                </Viewbox>
+            </Button>
+            
+            <ComboBox HorizontalAlignment="Left"
+                      SelectedIndex="0"
+                      VerticalAlignment="Bottom"
+                      Width="128">
+                <ComboBoxItem Content="Brown"/>
+                <ComboBoxItem Content="White"/>
+            </ComboBox>
+
+            <Button Background="Transparent"
+                    BorderBrush="Transparent"
+                    Height="24"
+                    HorizontalAlignment="Right"
+                    Padding="4"
+                    VerticalAlignment="Bottom"
+                    Width="24">
+                <FontIcon FontSize="14" Glyph="&#xe713;"/>
+            </Button>
+        </Grid>
     </Grid>
 </Window>
