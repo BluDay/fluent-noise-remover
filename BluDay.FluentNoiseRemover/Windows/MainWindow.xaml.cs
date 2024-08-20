@@ -1,4 +1,4 @@
-namespace BluDay.FluentNoiseRemover;
+namespace BluDay.FluentNoiseRemover.Windows;
 
 /// <summary>
 /// An empty window that can be used on its own or navigated to within a Frame.
@@ -33,5 +33,10 @@ public sealed partial class MainWindow : Window
         _appWindow.ResizeClient(new SizeInt32(480, 480));
 
         AppTitleBar.SetWindow(this);
+    }
+
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        new SettingsWindow().Activate();
     }
 }
