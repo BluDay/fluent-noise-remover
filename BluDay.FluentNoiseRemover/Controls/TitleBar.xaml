@@ -6,14 +6,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             MaxHeight="48">
+             MaxHeight="48"
+             SizeChanged="UserControl_SizeChanged">
     <UserControl.Resources>
         <Style TargetType="Button" BasedOn="{StaticResource DefaultButtonStyle}">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderBrush" Value="Transparent"/>
-            <Setter Property="Height" Value="28"/>
-            <Setter Property="Padding" Value="8"/>
-            <Setter Property="Width" Value="28"/>
+            <Setter Property="Height" Value="24"/>
+            <Setter Property="Padding" Value="6"/>
+            <Setter Property="Width" Value="24"/>
         </Style>
     </UserControl.Resources>
     
@@ -24,13 +25,13 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         
-        <Button>
+        <Button x:Name="BackButton">
             <Viewbox>
                 <FontIcon Glyph="&#xe72b;"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Column="2">
+        <Button x:Name="CloseButton" Click="CloseButton_Click" Grid.Column="2">
             <Viewbox>
                 <FontIcon Glyph="&#xe8bb;"/>
             </Viewbox>
