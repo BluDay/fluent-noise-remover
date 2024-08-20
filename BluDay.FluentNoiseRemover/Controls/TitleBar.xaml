@@ -27,7 +27,7 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         
-        <Button x:Name="BackButton">
+        <Button x:Name="BackButton" IsEnabled="False" Visibility="Collapsed">
             <Viewbox>
                 <FontIcon Glyph="&#xe72b;"/>
             </Viewbox>
@@ -39,7 +39,7 @@
                 Height="3"
                 VerticalAlignment="Center"
                 Width="32"
-                Grid.Column="2"/>
+                Grid.ColumnSpan="5"/>
 
         <Button x:Name="CloseButton" Click="CloseButton_Click" Grid.Column="4">
             <Viewbox>
