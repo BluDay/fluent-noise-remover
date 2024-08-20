@@ -23,6 +23,8 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition/>
             <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         
         <Button x:Name="BackButton">
@@ -31,7 +33,15 @@
             </Viewbox>
         </Button>
 
-        <Button x:Name="CloseButton" Click="CloseButton_Click" Grid.Column="2">
+        <Border Background="{ThemeResource ControlStrongFillColorDefaultBrush}"
+                BorderThickness="0"
+                CornerRadius="2"
+                Height="3"
+                VerticalAlignment="Center"
+                Width="32"
+                Grid.Column="2"/>
+
+        <Button x:Name="CloseButton" Click="CloseButton_Click" Grid.Column="4">
             <Viewbox>
                 <FontIcon Glyph="&#xe8bb;"/>
             </Viewbox>
