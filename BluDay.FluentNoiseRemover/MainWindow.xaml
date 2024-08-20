@@ -49,7 +49,9 @@
                     Padding="4"
                     VerticalAlignment="Bottom"
                     Width="24">
-                <FontIcon FontSize="14" Glyph="&#xe713;"/>
+                <Viewbox>
+                    <FontIcon Glyph="&#xe713;"/>
+                </Viewbox>
             </Button>
         </Grid>
     </Grid>
