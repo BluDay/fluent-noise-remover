@@ -24,6 +24,13 @@ public sealed partial class SettingsWindow : Window
 
         InitializeComponent();
 
+        Setup();
+
+        AppTitleBar.SetWindow(this);
+    }
+
+    private void Setup()
+    {
         _overlappedPresenter.IsMaximizable = false;
         _overlappedPresenter.IsMinimizable = false;
         _overlappedPresenter.IsResizable   = false;
@@ -31,7 +38,5 @@ public sealed partial class SettingsWindow : Window
         _overlappedPresenter.SetBorderAndTitleBar(true, false);
 
         _appWindow.ResizeClient(new SizeInt32(1200, 800));
-
-        AppTitleBar.SetWindow(this);
     }
 }

@@ -24,6 +24,13 @@ public sealed partial class MainWindow : Window
 
         InitializeComponent();
 
+        Setup();
+
+        AppTitleBar.SetWindow(this);
+    }
+
+    private void Setup()
+    {
         _overlappedPresenter.IsMaximizable = false;
         _overlappedPresenter.IsMinimizable = false;
         _overlappedPresenter.IsResizable   = false;
@@ -31,8 +38,6 @@ public sealed partial class MainWindow : Window
         _overlappedPresenter.SetBorderAndTitleBar(true, false);
 
         _appWindow.ResizeClient(new SizeInt32(480, 480));
-
-        AppTitleBar.SetWindow(this);
     }
 
     private void Button_Click(object sender, RoutedEventArgs e)
