@@ -1,12 +1,8 @@
-# fluent-noise-remover
+# Fluent Noise Remover
 
 Simple WinUI 3-based ambient noise remover app.
 
-The project is far from done at the moment.
-
-## Screenshots
-
-From 2024-08-24:
+**The app does not have any functionality at this time.**
 
 <div style="display: inline-block;">
   <img src="/assets/screenshots/0.png?raw=true" width="400"/>
