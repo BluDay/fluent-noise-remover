@@ -1,4 +1,4 @@
-﻿global using BluDay.FluentNoiseRemover.Windows;
+﻿global using BluDay.FluentNoiseRemover;
 
 global using Microsoft.UI.Input;
 global using Microsoft.UI.Windowing;

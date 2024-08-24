@@ -1,9 +1,9 @@
-namespace BluDay.FluentNoiseRemover.Windows;
+namespace BluDay.FluentNoiseRemover;
 
 /// <summary>
 /// An empty window that can be used on its own or navigated to within a Frame.
 /// </summary>
-public sealed partial class SettingsWindow : Window
+public sealed partial class MainWindow : Window
 {
     private DisplayArea _displayArea;
 
@@ -14,7 +14,7 @@ public sealed partial class SettingsWindow : Window
     /// <summary>
     /// Initializes a new instance of the <see cref="MainWindow"/> class.
     /// </summary>
-    public SettingsWindow()
+    public MainWindow()
     {
         _appWindow = AppWindow;
 
@@ -37,6 +37,6 @@ public sealed partial class SettingsWindow : Window
 
         _overlappedPresenter.SetBorderAndTitleBar(true, false);
 
-        _appWindow.ResizeClient(new SizeInt32(1200, 800));
+        _appWindow.ResizeClient(new SizeInt32(400, 400));
     }
 }
