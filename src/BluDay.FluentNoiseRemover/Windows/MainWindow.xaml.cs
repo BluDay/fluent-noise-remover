@@ -37,7 +37,7 @@ public sealed partial class MainWindow : Window
 
         _overlappedPresenter.SetBorderAndTitleBar(true, false);
 
-        _appWindow.ResizeClient(new SizeInt32(480, 480));
+        _appWindow.ResizeClient(new SizeInt32(380, 380));
     }
 
     private void Button_Click(object sender, RoutedEventArgs e)

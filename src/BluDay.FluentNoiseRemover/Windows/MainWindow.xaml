@@ -20,12 +20,17 @@
 
         <!--<TextBlock HorizontalAlignment="Center" Text="{x:Bind}" VerticalAlignment="Center" Grid.RowSpan="2"/>-->
 
-        <Grid Padding="8" Grid.RowSpan="2">
+        <Grid Padding="8" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
             <Button CornerRadius="64"
                     Height="100"
                     HorizontalAlignment="Center"
                     Padding="28"
-                    VerticalAlignment="Center"
+                    VerticalAlignment="Top"
                     Width="100">
                 <Viewbox>
                     <!-- f8ae (PauseBold) -->
@@ -34,10 +39,7 @@
                 </Viewbox>
             </Button>
             
-            <ComboBox HorizontalAlignment="Left"
-                      SelectedIndex="0"
-                      VerticalAlignment="Bottom"
-                      Width="128">
+            <ComboBox HorizontalAlignment="Left" SelectedIndex="0" VerticalAlignment="Bottom">
                 <ComboBox.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}"/>
@@ -69,18 +71,32 @@
                 </ComboBoxItem>
             </ComboBox>
 
-            <Button Background="Transparent"
-                    BorderBrush="Transparent"
-                    Click="Button_Click"
-                    Height="24"
-                    HorizontalAlignment="Right"
-                    Padding="4"
-                    VerticalAlignment="Bottom"
-                    Width="24">
-                <Viewbox>
-                    <FontIcon Glyph="&#xe713;"/>
-                </Viewbox>
-            </Button>
+            <StackPanel HorizontalAlignment="Right"
+                        Orientation="Horizontal"
+                        Spacing="2"
+                        VerticalAlignment="Bottom">
+                <StackPanel.Resources>
+                    <Style TargetType="Button" BasedOn="{StaticResource DefaultButtonStyle}">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="BorderBrush" Value="Transparent"/>
+                        <Setter Property="Height" Value="24"/>
+                        <Setter Property="Padding" Value="4"/>
+                        <Setter Property="Width" Value="24"/>
+                    </Style>
+                </StackPanel.Resources>
+
+                <Button>
+                    <Viewbox>
+                        <FontIcon Glyph="&#xe767;"/>
+                    </Viewbox>
+                </Button>
+
+                <Button Click="Button_Click">
+                    <Viewbox>
+                        <FontIcon Glyph="&#xe713;"/>
+                    </Viewbox>
+                </Button>
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>
